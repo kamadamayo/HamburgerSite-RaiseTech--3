@@ -1,0 +1,29 @@
+@charset 'UFT-8';
+@use '../../foundation/mixin';
+@use '../../foundation/variable';
+@use '../utility/extend';
+
+.c-ttl {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 38px;
+    @include mixin.tab {
+        margin-bottom: 30px;
+    }
+    @include mixin.pc {
+        font-size: 6.4rem;
+        margin: 0 0 0 65px;
+    }
+}
+
+.c-ttl__content {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: variable.$headline-font;
+    padding-bottom: 40px;
+    &::after {
+        @extend %deco;
+        width: 10.113%;
+    }
+}

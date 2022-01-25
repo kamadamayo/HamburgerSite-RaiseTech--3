@@ -1,0 +1,47 @@
+@charset 'UFT-8';
+@use '../../foundation/mixin';
+@use '../../foundation/variable';
+
+.p-post {
+    color: #fff;
+    background-color: variable.$addition-color;
+    width: 89%;
+    margin: 0 auto;
+    padding-bottom: 12.9%;
+    @include mixin.tab {
+        display: flex;
+        padding-bottom: 0;
+    }
+    &:not(:last-child){
+        margin: 20px auto;
+    }
+    img {
+        @include mixin.tab{
+            width: 50%;
+            //height: 100%;
+        }
+    }
+    figcaption {
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            padding-bottom: 24px;
+        }
+        h3 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 1.6rem;
+            padding-bottom: 12%;
+            @include mixin.tab {
+            padding-bottom: 6.2%;
+            }
+        }
+    }
+    &__wrapper {
+        padding: 31.5px 73px 0 17px;
+    }
+}
+

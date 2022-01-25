@@ -1,0 +1,63 @@
+@charset 'UFT-8';
+@use '../../foundation/mixin';
+@use '../../foundation/variable';
+@use '../utility/extend';
+
+.p-access {
+    position: relative;
+    background-color: #000;
+    z-index: 1;
+    @include mixin.tab {
+        min-height: 415px;
+    }
+    @include mixin.pc {
+        min-height: 600px;
+    }
+    &::before {
+        content: "";
+        display: block;
+        background-color: #000;
+        opacity: 0.3;
+        width: 100%;
+        height: 66%;
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        @include mixin.tab {
+            height: 100%;
+        }
+        @include mixin.pc {
+            width: 60%;
+            height: 100%;
+        }
+    }
+    iframe {
+        position: absolute;
+        top: 0;
+        opacity: 0.6;
+    }
+    &__info {
+        position: relative;
+        @include mixin.paddingPercent(375,40,40,50,40);
+        color: #fff;
+        font-weight: 700;
+        z-index: 150;
+        @include mixin.tab {
+            @include mixin.paddingPercent(834,40,40,40,50);
+        }
+        @include mixin.pc {
+            @include mixin.paddingPercent(1553,83,737,40,119);
+        }
+        &--title {
+            font-size: 3rem;
+            &::after {
+                @extend %deco;
+            }
+        }
+        &--text {
+            font-size: 1.4rem;
+            line-height: 2.3;
+            padding-top: 40px;
+        }
+    }
+}

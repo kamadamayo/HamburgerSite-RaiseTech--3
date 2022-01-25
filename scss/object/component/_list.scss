@@ -1,0 +1,25 @@
+@charset 'UFT-8';
+@use '../../foundation/mixin';
+@use '../../foundation/variable';
+
+.c-list {
+    font-size: 1.6rem;
+    &--num {
+        ol {
+            margin-bottom: 20px;
+            &:nth-child(2) {
+                margin-left: 18px;
+            }
+        }
+    }
+    &--bul {
+        ul {
+            margin-bottom: 20px;
+            list-style: none;
+            &:nth-child(2) {
+                margin-left: 18px;
+            }
+        }
+    }
+}
+

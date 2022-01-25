@@ -1,0 +1,16 @@
+@charset 'UFT-8';
+@use './mixin';
+@use './variable';
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: variable.$text-font;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}

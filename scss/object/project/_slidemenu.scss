@@ -1,0 +1,23 @@
+@charset 'UFT-8';
+@use '../../foundation/mixin';
+@use '../../foundation/variable';
+
+.p-slidemenu {
+    transform: translateX(100vw);
+    z-index: 700;
+    transition: all .5s;
+    @include mixin.pc {
+        transform: translateX(0);
+    }
+}
+.is-none {
+    z-index: -1;//display:none;以外で非表示にする
+}
+.is-active {
+    transform: translateX(0);
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}

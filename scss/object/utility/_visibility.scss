@@ -1,0 +1,17 @@
+@charset 'UFT-8';
+@use '../../foundation/mixin';
+@use '../../foundation/variable';
+
+.u-visibility__sp {
+    display: block;
+    @include mixin.tab {
+        display: none;
+    }
+}
+
+.u-visibility__tab {
+    display: none;
+    @include mixin.tab {
+        display: block;
+    }
+}

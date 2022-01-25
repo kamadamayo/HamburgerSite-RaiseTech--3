@@ -1,0 +1,27 @@
+@charset 'UFT-8';
+@use '../../foundation/mixin';
+@use '../../foundation/variable';
+
+.u-mg--menu {
+    margin: 25px 17px 0 auto;
+}
+
+.u-mg--tb37 {
+    margin-top: 37px;
+    margin-bottom: 37px;
+}
+
+.u-mg--lr-auto {
+    margin: 0 auto;
+}
+
+.u-mg--tb30-lr-auto {
+    margin: 30px auto;
+}
+
+.u-mg--tb30 {
+    margin: 30px 0;
+    @include mixin.pc {
+        margin-bottom: 60px;
+    }
+}

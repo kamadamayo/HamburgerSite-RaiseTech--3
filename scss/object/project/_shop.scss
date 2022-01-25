@@ -1,0 +1,30 @@
+@charset 'UFT-8';
+@use '../../foundation/mixin';
+@use '../../foundation/variable';
+
+.p-shop {
+    color: #fff;
+    &__link {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 34px;
+        a {
+            text-decoration: none;
+            font-size: 2rem;
+            padding-right: 0 15px;
+            color: #fff;
+        }
+        span {
+            content: "";
+            background-color: #fff;
+            width: 2px;
+            height: 19px;
+            position: relative;
+            top: 6px;
+            margin: 0 15px;
+        }
+    }
+    p {
+        font-size: 1.4rem;
+    }
+}

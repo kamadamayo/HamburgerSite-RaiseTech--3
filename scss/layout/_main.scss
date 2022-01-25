@@ -1,0 +1,9 @@
+@charset 'UFT-8';
+@use '../foundation/mixin';
+@use '../foundation/variable';
+
+.l-main {
+    position: relative;
+    z-index: 0;
+    background-color: #fff;
+}

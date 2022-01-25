@@ -1,0 +1,55 @@
+@charset 'UFT-8';
+
+/*Font sizeをpxからvwに自動計算
+第一引数で基準となる画面幅のフォントサイズ、第二引数で基準となる画面幅を入力
+===============================================*/
+@function get_vw($size, $viewport: 375 ) {
+    $rate: 100 / $viewport;
+    @return $rate * $size * 1vw;
+}
+
+@mixin fz_vw($font_size:10) {
+    font-size: $font_size * 1px;
+    font-size: get_vw($font_size);
+}
+
+/*BreakPoint
+===============================================*/
+$pc: 1024px;
+$tab: 600px;
+$sp: 320px;
+
+@mixin pc {
+    @media screen and (min-width: $pc) {
+        @content;
+    }
+}// 画面サイズが1024px以上に適用
+
+@mixin tab {
+    @media screen and (min-width: $tab) {
+        @content;
+    }
+}// 画面サイズが768px以上に適用
+
+@mixin sp {
+    @media screen and (min-width: $sp) {
+        @content;
+    }
+}
+
+/*margin を px → % へ変換して指定する
+===============================================*/
+@mixin marginPercent($parentPxWidth, $mTop, $mRight, $mBottom, $mLeft){
+    margin : floor((($mTop / $parentPxWidth) * 10000%)) / 100 floor((($mRight / $parentPxWidth) * 10000%)) / 100 floor((($mBottom / $parentPxWidth) * 10000%)) / 100 floor((($mLeft / $parentPxWidth) * 10000%)) / 100;
+}
+/*padding を px → % へ変換して指定する
+===============================================*/
+@mixin paddingPercent($parentPxWidth, $pTop, $pRight, $pBottom, $pLeft){
+    padding : floor((($pTop / $parentPxWidth) * 10000%)) / 100 floor((($pRight / $parentPxWidth) * 10000%)) / 100 floor((($pBottom / $parentPxWidth) * 10000%)) / 100 floor((($pLeft / $parentPxWidth) * 10000%)) / 100;
+}
+
+/*横幅を px → % へ変換して指定する
+===============================================*/
+@mixin widthPercent( $parentPxWidth, $pxWidth ){
+    width: floor((( $pxWidth / $parentPxWidth ) * 10000% )) / 100;
+}

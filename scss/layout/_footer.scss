@@ -1,0 +1,11 @@
+@charset 'UFT-8';
+@use '../foundation/mixin';
+@use '../foundation/variable';
+
+.l-footer {
+    text-align: center;
+    background-image: url(https://github.com/kamadamayo/HamburgerSite-RaiseTech/blob/main/images/common/l-footer.png?raw=true);
+    background-size: cover;
+    color: #fff;
+    padding: 40px 0;
+}

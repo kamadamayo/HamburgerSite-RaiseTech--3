@@ -1,0 +1,45 @@
+@charset 'UFT-8';
+@use '../foundation/mixin';
+@use '../foundation/variable';
+
+.l-sidebar {
+    position: relative;
+    color: variable.$headline-color;
+    background-color: variable.$sidebar-color;
+    width: 87.5vw;
+    height: 100%;
+    position: relative;
+    left: 12.5vw;
+    @include mixin.tab {
+        width: 44vw;
+        left: 56vw;
+    }
+    @include mixin.pc {
+        width: 100%;
+        left: 0;
+    }
+    
+    /*
+    &__gradient {
+        background: linear-gradient(
+            90deg,
+            rgba(0,0,0,0.5) 0%,
+            rgba(0,0,0,0.5) 12%,
+            variable.$sidebar-color 12%,
+            variable.$sidebar-color 100%
+            );
+        @include mixin.tab {
+            background: linear-gradient(
+                90deg,
+                rgba(0,0,0,0.5) 0%,
+                rgba(0,0,0,0.5) 56%,
+                variable.$sidebar-color 56%,
+                variable.$sidebar-color 100%
+                );
+        }
+        @include mixin.pc {
+            background: none;
+            background-color: variable.$sidebar-color;
+        }
+    }*/
+}

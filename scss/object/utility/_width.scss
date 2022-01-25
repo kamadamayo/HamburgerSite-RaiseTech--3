@@ -1,0 +1,13 @@
+@charset 'UFT-8';
+@use '../../foundation/mixin';
+@use '../../foundation/variable';
+
+.u-width--89 {
+    width: 89%;
+}
+//これ考え直す
+.u-block {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

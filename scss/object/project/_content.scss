@@ -1,0 +1,45 @@
+@charset 'UFT-8';
+@use '../../foundation/mixin';
+@use '../../foundation/variable';
+@use '../utility/extend';
+
+%box {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 89.333%;
+    min-height: 642px;
+    list-style: none;
+}
+
+.p-content {
+    ul {
+        display: flex;
+        flex-flow: column;
+        @include mixin.tab {
+            display: flex;
+            flex-flow: row
+        }
+        li {
+            position: relative;
+            @extend %box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: url(https://github.com/kamadamayo/HamburgerSite-RaiseTech/blob/main/images/index/p-content__item1.png?raw=true);
+            margin: 5.333% auto;
+            padding: 16px 10px 0 13px;
+            @include mixin.tab {
+                margin: 4.796%;
+            }
+            &:nth-child(2) {
+                background: url(https://github.com/kamadamayo/HamburgerSite-RaiseTech/blob/main/images/index/p-content__item2.png?raw=true);
+                margin-top: 0;
+                margin-bottom: 10.666%;
+                @include mixin.tab {
+                    margin: 4.796%;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}

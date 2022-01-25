@@ -1,0 +1,28 @@
+@charset 'UFT-8';
+@use '../../foundation/mixin';
+@use '../../foundation/variable';
+
+.p-sidebar__menu {
+    position: absolute;
+    top: 200px;
+    ul {
+        list-style: none;
+        display: inline-block;
+        width: 100%;
+        h2 {
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+        li {
+            cursor: pointer;
+            display: block;
+            margin-left: 20px;
+            line-height: 2.4;
+            a {
+                color: variable.$headline-color;
+                text-decoration: none;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

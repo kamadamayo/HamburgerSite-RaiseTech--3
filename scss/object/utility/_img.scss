@@ -1,0 +1,18 @@
+@charset 'UFT-8';
+@use '../../foundation/mixin';
+@use '../../foundation/variable';
+
+.u-img--special {
+    margin: 30px auto;
+    display: block;
+    @include mixin.tab {
+        margin: 60px auto 28% auto;
+        width: 69%;
+        height: 42%;
+    }
+    @include mixin.pc {
+        margin: 60px auto;
+        width: 37%;
+        height: 23%;
+    }
+}

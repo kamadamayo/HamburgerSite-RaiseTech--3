@@ -1,0 +1,43 @@
+@charset 'UFT-8';
+@use '../../foundation/mixin';
+@use '../../foundation/variable';
+
+.p-searchform {
+    display: flex;
+    justify-content: center;
+    &__box {
+        background-color: #fff;
+        position: relative;
+        width: 61.333vw;
+        font-size: 2rem;
+        &:focus {
+            cursor: text;
+        }
+        @include mixin.pc {
+            width: 25.499vw;
+        }
+        input {
+            border: variable.$headline-color 1px solid;
+            border-radius: 10px;
+            height: 46px;
+            background: url(https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/common/search.png?raw=true);
+            background-repeat: no-repeat;
+            background-position-x: 20px;
+            background-position-y: center;
+            padding-left: 60px;
+            padding-right: 20px;
+        }
+    }
+    &__submit {
+        border: variable.$headline-color 1px solid;
+        border-radius: 10px;
+        height: 46px;
+        background-image: linear-gradient(#F2EDE9,#DED8D3);
+        padding: 12px 23px;
+        margin-left: 12px;
+        @include mixin.pc {
+            margin-right: 32px;
+            padding: 12px 52px;
+        }
+    }
+}

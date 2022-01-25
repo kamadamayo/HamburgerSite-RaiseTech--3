@@ -1,0 +1,49 @@
+@charset 'UFT-8';
+@use '../../foundation/mixin';
+@use '../../foundation/variable';
+
+.p-pagination {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1.6rem;
+    width: 89%;
+    margin: 60px auto 30px auto;
+    @include mixin.tab {
+        justify-content: center;
+        align-items: center;
+    }
+    p {
+        display: inline-block;
+        color: variable.$headline-color;
+        font-family: variable.$headline-font;
+        font-weight: 700;
+        &:nth-child(2){
+            &::after {
+                content: " /";
+            }
+        }
+    }
+    a {
+        color: variable.$headline-color;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: none;
+        width: 35px;
+        padding: 5px 0;
+    }
+    &__prev,&__next {
+        display: flex;
+    }
+    &__number {
+        border: solid 1px;
+        margin-left: 15px;
+        &:hover {
+            background-color: variable.$addition-color;
+            color: #fff;
+        }
+        &:nth-last-child(2){
+            margin-right: 15px;
+        }
+    }
+}

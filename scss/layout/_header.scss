@@ -1,0 +1,16 @@
+@charset 'UFT-8';
+@use '../foundation/mixin';
+@use '../foundation/variable';
+
+.l-header {
+    background-color: variable.$base-color;
+    color: variable.$headline-color;
+    font-family: variable.$headline-font;
+    font-weight: 700;
+    @include mixin.pc {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+

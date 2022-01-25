@@ -1,0 +1,19 @@
+@charset 'UFT-8';
+@use '../../foundation/mixin';
+@use '../../foundation/variable';
+
+.c-detail {
+    display: block;
+    width: 163px;
+    height: 43px;
+    background-color: #fff;
+    border-radius: 20px;
+    color: variable.$headline-color;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0 auto;
+    cursor: pointer;
+    @include mixin.tab {
+        margin-bottom: 5.5%;
+    }
+}
