@@ -5,23 +5,27 @@
 .p-sidebar__menu {
     position: absolute;
     top: 200px;
-    ul {
-        list-style: none;
-        display: inline-block;
-        width: 100%;
-        h2 {
-            font-size: 2.4rem;
-            font-weight: 700;
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    li {
+        cursor: pointer;
+        display: block;
+        line-height: 2.4;
+        font-size: 2.4rem;
+        font-weight: 700;
+        a {
+            color: variable.$headline-color;
+            text-decoration: none;
         }
+    }
+    .sub-menu {
+        margin-left: 20px;
         li {
-            cursor: pointer;
-            display: block;
-            margin-left: 20px;
-            line-height: 2.4;
-            a {
-                color: variable.$headline-color;
-                text-decoration: none;
-                font-size: 1.6rem;
+            font-weight: 400;
+            font-size: 2rem;
+            &:last-child {
+                margin-bottom: 43px;
             }
         }
     }

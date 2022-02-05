@@ -1,4 +1,3 @@
-
 <?php
     //テーマサポート
     function custom_theme_support(){
@@ -9,12 +8,13 @@
             'galley',
             'caption',
         ));
-    add_theme_support('menus');//カスタムメニューの有効化
+    //add_theme_support('menus');//カスタムメニューの有効化
     add_theme_support('title-tag');//タイトルタグの自動出力
     add_theme_support('post-thumbnails');//アイキャッチ画像有効化
     add_theme_support('automatic-feed-links');//フィードリンクの有効化
     }
     add_action('after_setup_theme', 'custom_theme_support');
+
     //スタイルシートの読み込み
     function hamburger_scripts() {
             $locale = get_locale();//言語情報を取得している
@@ -32,3 +32,9 @@
         wp_enqueue_script( 'mayo', get_template_directory_uri().'/scripts/script.js', array(), '20220125', true ); //この行をコピペしてパスを変更したり任意の名前を変更して追加していく
     }
     add_action( 'wp_enqueue_scripts', 'hamburger_scripts' );
+
+    //メニューの有効化
+    register_nav_menus( array(
+        'footer-nav' => 'Footer Nav',
+        'side-menu' => 'Side Menu',
+        ));

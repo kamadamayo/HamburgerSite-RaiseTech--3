@@ -1,12 +1,14 @@
         <footer class="l-footer c-grid">
-            <din class="p-shop">
-                <div class="p-shop__link">
-                    <a href="#">ショップ情報</a>
-                    <span></span>
-                    <a href="#">ヒストリー</a>
-                </div>
+            <div class="p-shop">
+                    <?php
+                        wp_nav_menu( array(
+                            'theme_location' => 'footer-nav',
+                            'container_class' => 'p-shop__link',
+                            'menu_class' => 'p-shop__link__nav',
+                        ));
+                    ?>
                 <p>Copyright: RaiseTech</p>
-            </din>
+            </div>
         </footer>
     </div>
     <?php wp_footer(); ?>

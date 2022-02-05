@@ -26,6 +26,9 @@
         margin: 30px 0;
     }
     &__menu {
+        position: relative;
+        top: 0;
+        margin: 60px 17px 0 auto;
         display: block;
         font-size: 2rem;
         @include mixin.tab {

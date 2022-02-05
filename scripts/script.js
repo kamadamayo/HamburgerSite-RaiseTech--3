@@ -18,8 +18,9 @@ $(window).resize(function(){
     var x = $(window).width();//windowの幅をxに代入
     var pc = 1024;//windowの分岐幅をyに代入
     if (pc <= x) {
-        $('#p-slidemenu').removeClass('p-slidemenu is-active');
+        $('#overlay').removeClass('is-over');
+        $('#p-slidemenu').removeClass('p-slidemenu is-active u-fixed');
         } else {
-        $('#p-slidemenu').addClass('p-slidemenu is-none');
+        $('#p-slidemenu').addClass('p-slidemenu is-none u-fixed');
         } 
 });

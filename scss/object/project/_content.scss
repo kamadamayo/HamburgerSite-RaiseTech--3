@@ -25,14 +25,14 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            background: url(https://github.com/kamadamayo/HamburgerSite-RaiseTech/blob/main/images/index/p-content__item1.png?raw=true);
+            background: url(https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/index/p-content__item1.png?raw=true);
             margin: 5.333% auto;
             padding: 16px 10px 0 13px;
             @include mixin.tab {
                 margin: 4.796%;
             }
             &:nth-child(2) {
-                background: url(https://github.com/kamadamayo/HamburgerSite-RaiseTech/blob/main/images/index/p-content__item2.png?raw=true);
+                background: url(https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/index/p-content__item2.png?raw=true);
                 margin-top: 0;
                 margin-bottom: 10.666%;
                 @include mixin.tab {
