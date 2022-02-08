@@ -2,7 +2,7 @@
             <div class="p-shop">
                     <?php
                         wp_nav_menu( array(
-                            'theme_location' => 'footer-nav',
+                            'theme_location' => 'footer-menu',
                             'container_class' => 'p-shop__link',
                             'menu_class' => 'p-shop__link__nav',
                         ));

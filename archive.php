@@ -25,51 +25,23 @@ get_header(); ?>
                     テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                 </p>
             </section>
-            <figure class="p-post">
-                <img src="https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/archive/archive-visual.png?raw=true" alt="">
-                <figcaption>
-                    <div class="p-post__wrapper">
-                        <h2>チーズバーガー</h2>
-                        <h3>小見出しが入ります</h3>
-                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        </p>
-                    </div>
-                    <button class="c-detail">
-                        詳しく見る
-                    </button>
-                </figcaption>
-            </figure>
-            <figure class="p-post">
-                <img src="https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/archive/archive-visual.png?raw=true" alt="">
-                <figcaption>
-                    <div class="p-post__wrapper">
-                        <h2>ダブルチーズバーガー</h2>
-                        <h3>小見出しが入ります</h3>
-                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        </p>
-                    </div>
-                    <button class="c-detail">
-                        詳しく見る
-                    </button>
-                </figcaption>
-            </figure>
-            <figure class="p-post">
-                <img src="https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/archive/archive-visual.png?raw=true" alt="">
-                <figcaption>
-                    <div class="p-post__wrapper">
-                        <h2>スペシャルチーズバーガー</h2>
-                        <h3>小見出しが入ります</h3>
-                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        </p>
-                    </div>
-                    <button class="c-detail">
-                        詳しく見る
-                    </button>
-                </figcaption>
-            </figure>
+            <?php
+            $args = array(
+                'category' => '52',
+                'post_type' => 'post',
+                'post_per_page' => 3,
+            );
+            $myposts = new WP_query($args);
+            if( $myposts -> have_posts()):
+                while( $myposts -> have_posts()):
+                    $myposts -> the_post();
+                    ?>
+                    <?php get_template_part('content'); ?>
+                <?php
+                    endwhile;
+                endif;
+                wp_reset_postdata();
+            ?>
             <div class="p-pagination">
                 <div class="u-visibility__tab">
                     <p>page</p>
