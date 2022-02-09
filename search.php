@@ -25,7 +25,7 @@
             $args = array(
                 'category' => '52',
                 'post_type' => 'post',
-                'post_per_page' => 3,
+                'post_per_page' => 5,
             );
             $myposts = new WP_query($args);
             if( $myposts -> have_posts()):
