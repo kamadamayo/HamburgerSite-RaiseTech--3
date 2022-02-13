@@ -134,30 +134,6 @@ get_header(); ?>
                     boldboldboldboldboldboldbold
                 </p>
             </article>
-            <div class="p-pagination">
-                <div class="u-visibility__tab">
-                    <p>page</p>
-                    <p>1</p>
-                    <p>10</p>
-                </div>
-                <div class="p-pagination__prev">
-                    <a class="" href=""><<</a>
-                    <a class="u-visibility__sp" href="">前へ</a>
-                </div>
-                <a href="" class="p-pagination__number u-visibility__tab">1</a>
-                <a href="" class="p-pagination__number u-visibility__tab">2</a>
-                <a href="" class="p-pagination__number u-visibility__tab">3</a>
-                <a href="" class="p-pagination__number u-visibility__tab">4</a>
-                <a href="" class="p-pagination__number u-visibility__tab">5</a>
-                <a href="" class="p-pagination__number u-visibility__tab">6</a>
-                <a href="" class="p-pagination__number u-visibility__tab">7</a>
-                <a href="" class="p-pagination__number u-visibility__tab">8</a>
-                <a href="" class="p-pagination__number u-visibility__tab">9</a>
-                <div class="p-pagination__next">
-                    <a class="u-visibility__sp" href="">次へ</a>
-                    <a class="" href="">>></a>
-                </div>
-            </div>
         </main>
         <?php get_sidebar(); ?>
         <?php get_footer(); ?>

@@ -1,3 +1,4 @@
+
 <?php
     $paged = get_query_var('paged')? get_query_var('paged'): 1;//現在のページ送り番号（何ページ目か）を取得する記述
     $information= new WP_Query( array(//$informationは任意の変数,

@@ -4,10 +4,7 @@
         <div class="p-post__wrapper">
             <h2><?php the_title(); ?></h2>
             <!--<h3>小見出しが入ります</h3>-->
-            <?php the_content(); ?>
+            <?php the_content('詳しく見る'); ?><!--the_contentの方がいいのか？-->
         </div>
-        <button class="c-detail">
-            詳しく見る
-        </button>
     </figcaption>
 </figure>

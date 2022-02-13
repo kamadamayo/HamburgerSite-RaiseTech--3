@@ -759,6 +759,30 @@ img {
     margin-bottom: 5.5%;
   }
 }
+.c-detail span {
+  display: block;
+}
+
+.more-link {
+  display: block;
+  width: 163px;
+  height: 43px;
+  background-color: #fff;
+  border-radius: 20px;
+  color: #707070;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 auto;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0;
+}
+@media screen and (min-width: 600px) {
+  .more-link {
+    margin-bottom: 5.5%;
+  }
+}
 
 .c-list {
   font-size: 1.6rem;
@@ -1062,7 +1086,7 @@ img {
   }
 }
 .p-post__wrapper {
-  padding: 31.5px 73px 0 17px;
+  padding: 31.5px 17px 0 17px;
 }
 
 .wp-pagenavi {
@@ -1101,6 +1125,7 @@ img {
   width: 35px;
   padding: 5px 0;
   margin-left: 15px;
+  border: 1px solid;
 }
 .wp-pagenavi .current {
   background-color: #3C2B1C;

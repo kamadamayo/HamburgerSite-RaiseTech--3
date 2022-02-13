@@ -14,7 +14,7 @@
     add_theme_support('automatic-feed-links');//フィードリンクの有効化
     //メニューの有効化
     register_nav_menus( array( //register_nav_menu( $location, $description )
-        'footer-menu' => esc_html__('Footer Menu'),
+        'footermenu' => esc_html__('Footer Menu'),
         'side-menu' => esc_html__('Side Menu'),
         ));
     }
