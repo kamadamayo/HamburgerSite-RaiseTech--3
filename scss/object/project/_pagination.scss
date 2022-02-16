@@ -25,9 +25,6 @@
                 content: " /";
             }
         }
-        &::before {
-            content: "page ";
-        }
     }
     span,a {
         color: variable.$headline-color;

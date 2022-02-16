@@ -1114,9 +1114,6 @@ img {
 .wp-pagenavi .pages:nth-child(2)::after {
   content: " /";
 }
-.wp-pagenavi .pages::before {
-  content: "page ";
-}
 .wp-pagenavi span, .wp-pagenavi a {
   color: #707070;
   font-weight: 700;

@@ -12,6 +12,7 @@
     add_theme_support('title-tag');//タイトルタグの自動出力
     add_theme_support('post-thumbnails');//アイキャッチ画像有効化
     add_theme_support('automatic-feed-links');//フィードリンクの有効化
+    
     //メニューの有効化
     register_nav_menus( array( //register_nav_menu( $location, $description )
         'footermenu' => esc_html__('Footer Menu'),
@@ -32,4 +33,11 @@
     }
     add_action( 'wp_enqueue_scripts', 'read_scripts');
 
-
+    //メニュー（メインループ）を投稿（古い）順に並べる.ただし全てのメインループに影響が出る
+    function change_posts( $query ) {
+        if ( $query->is_main_query() ) {
+            $query-> set( 'order', 'ASC' );
+            $query-> set( 'orderby', 'date' );//投稿日古い順。もし運用していく側だったらこの設定はやりにくい？
+        }
+    }
+    add_action( 'pre_get_posts', 'change_posts' );
