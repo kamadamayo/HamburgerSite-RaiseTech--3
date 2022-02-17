@@ -3,9 +3,8 @@
             <div class="c-mainvisual c-mainvisual--archive">
                 <div class="c-mainvisual__headline c-mainvisual__headline--archive">
                     <h2>Search:</h2>
-                    <h4>見出しが入ります</h4>
+                    <h4><?php the_search_query(); ?></h4>
                 </div>
-                <!--<img src="https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/mainvisual/archive--sp.png?raw=true" alt="" class="c-mainvisual__sp">-->
                 <img src="https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/mainvisual/archive---tab.jpeg?raw=true" alt="" class="c-mainvisual__sp">
                 <img src="https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/mainvisual/archive---tab.jpeg?raw=true" alt="" class="c-mainvisual__tab">
                 <img src="https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/mainvisual/archive--pc.png?raw=true" alt="" class="c-mainvisual__pc">
@@ -22,7 +21,7 @@
                 </p>
             </section>
             <?php get_template_part('components/archive'); ?>
-        <?php get_template_part("components/pagination"); ?>
+            <?php wp_pagenavi(); ?>
         </main>
         <?php get_sidebar(); ?>
         <?php get_footer(); ?>

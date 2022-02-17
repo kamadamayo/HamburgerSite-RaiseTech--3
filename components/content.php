@@ -1,5 +1,5 @@
 <figure class="p-post">
-    <img src="https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/archive/archive-visual.png?raw=true" alt="">
+    <?php the_post_thumbnail('full'); ?>
     <figcaption>
         <div class="p-post__wrapper">
             <h2><?php the_title(); ?></h2>

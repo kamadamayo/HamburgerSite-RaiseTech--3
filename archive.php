@@ -8,7 +8,7 @@ get_header(); ?>
             <div class="c-mainvisual c-mainvisual--archive">
                 <div class="c-mainvisual__headline c-mainvisual__headline--archive">
                     <h2>Menu:</h2>
-                    <h4>チーズバーガー</h4>
+                    <h4><?php $category = get_the_category(); $cat_name = $category[2]->cat_name; echo $cat_name; ?></h4>
                 </div>
                 <img src="https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/mainvisual/archive---tab.jpeg?raw=true" alt="" class="c-mainvisual__sp">
                 <img src="https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/mainvisual/archive---tab.jpeg?raw=true" alt="" class="c-mainvisual__tab">
@@ -26,7 +26,7 @@ get_header(); ?>
                 </p>
             </section>
             <?php get_template_part("components/archive"); ?>
-            <?php get_template_part("components/pagination"); ?>
+            <?php wp_pagenavi(); ?>
         </main>
         <?php get_sidebar(); ?>
         <?php get_footer(); ?>
