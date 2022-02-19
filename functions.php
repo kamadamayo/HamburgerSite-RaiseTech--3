@@ -34,10 +34,21 @@
     add_action( 'wp_enqueue_scripts', 'read_scripts');
 
     //メニュー（メインループ）を投稿（古い）順に並べる.ただし全てのメインループに影響が出る
-    function change_posts( $query ) {
-        if ( $query->is_main_query() ) {
+    function change_posts( $query ){
+        if ($query->is_main_query()){
             $query-> set( 'order', 'ASC' );
             $query-> set( 'orderby', 'date' );//投稿日古い順。もし運用していく側だったらこの設定はやりにくい？
         }
     }
     add_action( 'pre_get_posts', 'change_posts' );
+    
+    //検索結果ページの最大表示件数を変更する
+    function myPreGetPosts( $query ){
+        if ( is_admin() || ! $query->is_main_query() ){
+            return;
+    }
+        if ($query->is_search()){
+        $query->set('posts_per_page', 5);
+    }
+    }
+    add_action('pre_get_posts','myPreGetPosts');
