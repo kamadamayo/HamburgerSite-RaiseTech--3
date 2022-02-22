@@ -8,9 +8,9 @@ get_header(); ?>
                 <div class="c-mainvisual__headline--another">
                     <h1>ヒストリー</h1>
                 </div>
-                <img src="https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/mainvisual/shop--sp.png?raw=true" alt="" class="c-mainvisual__sp">
-                <img src="https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/mainvisual/shop--tab.png?raw=true" alt="" class="c-mainvisual__tab">
-                <img src="https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/mainvisual/shop--pc.png?raw=true" alt="" class="c-mainvisual__pc">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/mainvisual/shop--sp.png" alt="" class="c-mainvisual__sp">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/mainvisual/shop--tab.png" alt="" class="c-mainvisual__tab">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/mainvisual/shop--pc.png" alt="" class="c-mainvisual__pc">
             </div>
             <article class="p-article u-width--89 u-mg--tb30-lr-auto">
                 <h2>見出しh2</h2>

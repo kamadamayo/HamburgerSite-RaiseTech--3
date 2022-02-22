@@ -12,5 +12,9 @@
         justify-content: space-between;
         align-items: center;
     }
+    a {
+        color: variable.$headline-color;
+        text-decoration: none;
+    }
 }
 

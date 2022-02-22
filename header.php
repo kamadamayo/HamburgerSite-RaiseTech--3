@@ -12,6 +12,6 @@
     <div id="c-grid">
         <header class="l-header c-grid">
         <button id="c-btn" class="c-btn__menu u-mg--menu">Menu</button>
-            <h1 class="c-ttl"><?php bloginfo('name'); ?></h1>
+            <a href="<?php echo home_url(); ?>"><h1 class="c-ttl"><?php bloginfo('name'); ?></h1></a>
             <?php get_search_form(); ?>
         </header>

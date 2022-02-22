@@ -1,9 +1,9 @@
 <?php get_header();?>
         <main class="l-main c-grid">
             <div class="c-mainvisual">
-                <img src="https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/mainvisual/index--sp.jpg?raw=true" alt="ハンバーガーの画像" class="c-mainvisual__sp">
-                <img src="https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/mainvisual/index--tab.png?raw=true" alt="ハンバーガーの画像" class="c-mainvisual__tab">
-                <img src="https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/mainvisual/index--pc.png?raw=true" class="c-mainvisual__pc">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/mainvisual/index--sp.jpg" alt="ハンバーガーの画像" class="c-mainvisual__sp">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/mainvisual/index--tab.png" alt="ハンバーガーの画像" class="c-mainvisual__tab">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/mainvisual/index--pc.png" class="c-mainvisual__pc">
             </div>
             <article>
                 <div class="p-content">

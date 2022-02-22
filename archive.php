@@ -10,9 +10,9 @@ get_header(); ?>
                     <h2>Menu:</h2>
                     <h4><?php $category = get_the_category(); $cat_name = $category[2]->cat_name; echo $cat_name; ?></h4>
                 </div>
-                <img src="https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/mainvisual/archive---tab.jpeg?raw=true" alt="" class="c-mainvisual__sp">
-                <img src="https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/mainvisual/archive---tab.jpeg?raw=true" alt="" class="c-mainvisual__tab">
-                <img src="https://github.com/kamadamayo/HamburgerSite-RaiseTech--2/blob/main/images/mainvisual/archive--pc.png?raw=true" alt="" class="c-mainvisual__pc">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/mainvisual/archive---tab.jpeg" alt="" class="c-mainvisual__sp">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/mainvisual/archive---tab.jpeg" alt="" class="c-mainvisual__tab">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/mainvisual/archive--pc.png" alt="" class="c-mainvisual__pc">
             </div>
             <section class="p-article u-width--89 u-mg--lr-auto">
                 <h1>小見出しが入ります</h1>

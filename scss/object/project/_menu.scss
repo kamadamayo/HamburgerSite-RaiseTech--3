@@ -3,11 +3,15 @@
 @use '../../foundation/variable';
 
 .p-sidebar__menu {
-    position: absolute;
-    top: 200px;
+    //position: absolute;
+    //top: 200px;
     list-style: none;
     display: inline-block;
     width: 100%;
+    padding-top: 130px;
+    @include mixin.pc {
+        padding-top: 0;
+    }
     li {
         cursor: pointer;
         display: block;
